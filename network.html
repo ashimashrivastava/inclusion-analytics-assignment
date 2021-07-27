@@ -1,0 +1,86 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="https://code.highcharts.com/modules/data.js"></script>
+    <title>HighCharts</title>
+</head>
+<body>
+
+    <div id="firstContainer"></div>
+
+    <div id="secondContainer"></div>
+
+    <script src="dataviaCSV.js"></script>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="https://code.highcharts.com/modules/data.js"></script>
+    <!-- <------ css ------>
+    <link rel="stylesheet" href="css/genre.css">
+    <title>HighCharts</title>
+</head>
+<body>
+
+    <header >
+        <div class="logo">
+            <a href="home.html">Home</a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Genre</a></li>
+                <li><a href="network.html">Network</a></li>
+                <li><a href="cities.html">Cities</a></li>
+                
+            </ul>
+        </nav>
+    </header>
+    <main>
+
+        <section>
+            <div class="right__container">
+                <img src="img/networks.jpg" alt="genre">
+            </div>
+            <div class="left__container">
+                <h1>Analysis by Program Network</h1>
+                <p>Interested in know which network do people like to watch ?
+                    <br>
+                    Check out the below data!
+                </p>
+            </div>
+            
+        </section>
+        
+    </main>
+
+    
+    <div id="firstContainer" class="first__container"></div>
+    <div class="chart__description">Number of people watching different network in different cities!</div>
+
+    <div id="secondContainer" class="second__container"></div>
+    <div class="chart__description">Number of people watching differenr genre in different networks!</div>
+
+    <div id="thirdContainer" class="second__container"></div>
+    <div class="chart__description">Number of people watching different program from different networks!</div>
+
+
+    <footer>
+        <p>Ashima Shrivastava</p>
+        <script>
+            var date = document.lastModified;
+            document.write(date);
+        </script>
+    </footer>
+    <script src="js/network.js"></script>
+</body>
+</html>

@@ -1,0 +1,276 @@
+
+
+/* body{
+    margin: 3rem 0 0 0;
+    font-family: 'Poppins', sans-serif;
+    font-size: .938rem;
+    font-weight: 500;
+    background-color: var(--first-color-lighten); 
+    color: #524748;
+    line-height: 1.6;
+} */
+body {
+	font-family: 'Roboto', sans-serif;
+	font-size: 18px;
+	margin: 0;
+}
+
+header {
+	width: 100%;
+	margin: 40px auto;
+	text-align: center;
+	display: inline-block;
+	/* new */
+	position: absolute;
+}
+
+.logo {
+	width: 26%;
+	float:left;
+    margin-top: 1.2%;
+    margin-left: 2%;
+    color: #ffffff;
+}
+ 
+.logo a{
+    color: #ffffff;
+	text-decoration: none;
+	font-size: 18px;
+	/* font-weight: bold; */
+	padding: 5px 50px;
+	display: block;
+	transition: .5s;
+}
+
+
+nav ul {
+	/* new */
+	width: 67%;
+	float: right;
+	list-style: none;
+	text-align: center;
+}
+
+nav li {
+	display: inline-block;
+	position: relative;
+}
+
+nav a {
+	color: #ffffff;
+	text-decoration: none;
+	font-size: 18px;
+	/* font-weight: bold; */
+	padding: 5px 50px;
+	display: block;
+	transition: .5s;
+}
+
+nav a:hover, .logo a:hover {
+	background-color: #ffffff;
+	color: #073448;
+}
+
+
+.home__background {
+	background-image: url('../img/tv1.PNG');	
+	background-position: center;
+	background-size: cover;
+	width: 100%;
+	height: 90vh;
+	
+	margin-bottom: 30px;
+	padding-top: 100px;
+	
+	text-align: center;
+}
+
+.home__background .items {
+	width: 60%;
+	margin: 40px auto;
+    margin-top: 10%;
+}
+
+.home__background h1 {
+	color: #ffffff;
+	font-size: 50px;
+	line-height: 1.6em;
+	padding-top: 63px;
+	margin: -5px;
+    font-family: emoji;
+}
+
+.home__background p {
+    color: #ffffff;
+	font-size: 23px;
+    line-height: 1.5em;
+    font-style: italic;
+    font-family: emoji;
+}
+
+.section{
+    padding: 4rem 0 2rem;
+
+}
+
+.section-title{
+    font-size: 2.25rem;
+    color: #3e0e12;
+    margin-bottom: 1.5rem;
+    text-align: center;
+
+}
+
+.section-subtitle{
+    display: block;
+    font-size: .875rem;
+    color: #2f0a0d;
+    text-align: center;
+    font-weight: 600;
+    margin-bottom: .25rem;
+}
+
+.project__container{
+    justify-items: center;
+    row-gap: 2rem;
+}
+
+.project__img{
+    position: relative;
+    overflow: hidden;
+    border-radius: .5rem;
+}
+
+.project__data{
+    position: absolute;
+    bottom: -100%;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgba(7, 52, 72, 0.8);
+    border-radius: .5rem;
+    transition: .3s;
+}
+
+.project__link{
+    
+    font-size: 500;
+    /* background-color: var(--first-color-dark); */
+    font-weight: 700;
+    color: #fbf9f9;
+    border-radius: .15rem;
+    margin-top: 1rem;
+}
+
+.project__title{
+    margin-bottom: 1rem;
+    font-size: 1.25rem;
+    color: #fbf9f9 ;
+    font-weight: 700;
+}
+
+.project__description {
+    color: #fbf9f9;
+    font-size: .813rem;
+    text-align: center;
+}
+
+.project__img:hover .project__data{
+    bottom: 0;
+}
+
+
+/* ----- Layout ----- */
+.bd-container{
+    max-width: 1024px;
+    width: calc(100% - 2rem);
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.bd-grid{
+    display: grid;
+    gap: 1.5rem;
+}
+
+.l-header{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    background-color: #140405;
+    
+}
+
+
+
+/* ---------- youtube video */
+
+:root {
+    --clr-primary: #651fff;
+    --clr-gray: #37474f;
+    --clr-gray-light: #b0bec5;
+  }
+  
+
+  
+  
+  
+  .wrapper-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 22rem);
+    justify-content: center;
+    gap: 2.5rem;
+    margin-top: 7rem;
+    margin-bottom: 1rem;
+  }
+  
+  .container {
+    overflow: hidden;
+    box-shadow: 0px 2px 8px 0px var(--clr-gray-light);
+    background-color: white;
+    text-align: center;
+    /* border-radius: 1rem; */
+    position: relative;
+    margin: 0.5rem;
+    transition: .4s;
+    height: 72%;
+    width: 100%;
+  }
+  
+  .banner-img {
+    position: relative;
+    background-image: url('../img/visu2.PNG');
+    height: 100%;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+
+  .chart__heading{
+      text-align: center;
+      font-family: emoji;
+      margin-top: 5%;
+  }
+  .container:hover .project__data{
+      bottom: 0;
+  }
+
+  footer {
+	background: #073448;
+	color: #fff;
+	text-align: center;
+	padding: 27px;
+	border-top: 10px solid #5db1d4;
+}
+
+
+    
+  
+  
